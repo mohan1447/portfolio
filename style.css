@@ -1,0 +1,78 @@
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out;
+}
+
+.skill-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.education-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.education-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.profile-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    max-width: 275px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.max-height {
+    max-height: 60px;
+}
+
+.scroll {
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+}
